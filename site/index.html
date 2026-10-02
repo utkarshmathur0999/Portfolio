@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utkarsh Mathur | Backend Software Engineer | Java &amp; Spring Boot</title>
+<meta name="description" content="Portfolio of Utkarsh Mathur, Backend Software Engineer specializing in Java, Spring Boot, Banking & FinTech systems, Microservices, and Generative AI.">
+<meta name="author" content="Utkarsh Mathur">
+<meta name="theme-color" content="#0e1626">
+<link rel="canonical" href="https://YOUR-SITE.netlify.app/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Utkarsh Mathur | Backend Software Engineer | Java & Spring Boot">
+<meta property="og:description" content="Java, Spring Boot, Banking & FinTech systems, Microservices, and Generative AI.">
+<meta property="og:url" content="https://YOUR-SITE.netlify.app/">
+<meta property="og:image" content="https://YOUR-SITE.netlify.app/src/assets/images/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Utkarsh Mathur | Backend Software Engineer">
+<meta name="twitter:description" content="Java, Spring Boot, Banking & FinTech systems, Microservices, and Generative AI.">
+<meta name="twitter:image" content="https://YOUR-SITE.netlify.app/src/assets/images/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/src/styles/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Utkarsh Mathur","jobTitle":"Backend Software Engineer","worksFor":{"@type":"Organization","name":"Tata Consultancy Services"},"alumniOf":"Jaipur Engineering College and Research Center","knowsAbout":["Java","Spring Boot","Microservices","ISO 20022","Generative AI"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="grid" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#home" aria-label="Utkarsh Mathur, home">UM<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <nav id="menu" aria-label="Primary">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a>
+    <a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="theme" id="theme" aria-label="Toggle light and dark theme"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+
+<main id="main">
+  <section class="hero wrap" id="home">
+    <div class="hero-copy">
+      <h1>Utkarsh Mathur</h1>
+      <p class="role">Backend Software Engineer</p>
+      <p class="tagline" id="tagline"></p>
+      <p class="intro" id="intro"></p>
+      <ul class="chips" id="heroStack" aria-label="Main technologies"></ul>
+      <div class="cta" id="heroCta"></div>
+      <dl class="stats" id="stats"></dl>
+    </div>
+    <div class="hero-visual">
+      <figure class="photo"><img id="heroPhoto" width="900" height="1128" fetchpriority="high" alt=""></figure>
+      <div class="trace" aria-hidden="true">
+        <div class="trace-bar"><b></b><b></b><b></b><span>payment-service</span></div>
+<pre><code><span class="c">// MT103  →  pacs.008 (ISO 20022)</span>
+<span class="k">@PostMapping</span>("/payments/convert")
+<span class="k">public</span> Mx convert(<span class="k">@RequestBody</span> Mt mt) {
+  <span class="k">return</span> transformer.toMx(mt);
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="about" aria-labelledby="h-about">
+    <h2 id="h-about">About me</h2>
+    <div class="about-grid">
+      <div class="prose" id="aboutText"></div>
+      <div><h3>Where I work</h3><ul class="chips" id="aboutFocus"></ul><img id="aboutPhoto" class="about-photo" loading="lazy" alt="" hidden></div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="experience" aria-labelledby="h-exp">
+    <h2 id="h-exp">Experience</h2>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section class="wrap sec" id="skills" aria-labelledby="h-skills">
+    <h2 id="h-skills">Skills</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter skills by category"></div>
+    <div class="skill-grid" id="skillGrid"></div>
+  </section>
+
+  <section class="wrap sec" id="projects" aria-labelledby="h-proj">
+    <h2 id="h-proj">Featured project</h2>
+    <article class="project" id="project"></article>
+  </section>
+
+  <section class="wrap sec" id="certifications" aria-labelledby="h-cert">
+    <h2 id="h-cert">Certifications</h2>
+    <div class="certs" id="certs"></div>
+  </section>
+
+  <section class="wrap sec" id="education" aria-labelledby="h-edu">
+    <h2 id="h-edu">Education</h2>
+    <div class="edu" id="edu"></div>
+  </section>
+
+  <section class="wrap sec" id="resume" aria-labelledby="h-res">
+    <h2 id="h-res">Download my resume</h2>
+    <div class="resume" id="resumeCard"></div>
+  </section>
+
+  <section class="wrap sec" id="gallery-sec" aria-labelledby="h-gal" hidden>
+    <h2 id="h-gal">Gallery</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="wrap sec contact" id="contact" aria-labelledby="h-contact">
+    <h2 id="h-contact">Let's connect</h2>
+    <p class="lead">Open to backend, Java, and AI-application roles. The quickest way to reach me is email.</p>
+    <div class="contact-list" id="contactList"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div><strong>Utkarsh Mathur</strong><p>Backend Software Engineer</p><p class="muted">Java • Spring Boot • Banking &amp; FinTech • Generative AI</p></div>
+    <nav aria-label="Footer" id="footNav"></nav>
+  </div>
+  <p class="wrap copy">© 2026 Utkarsh Mathur. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Certificate preview">
+  <button class="lb-close" id="lbClose" aria-label="Close preview">×</button>
+  <img id="lbImg" alt="">
+</div>
+
+<script type="module" src="/src/main.js"></script>
+<noscript><p style="padding:2rem">Please enable JavaScript to view this portfolio. Email: utkarshmathur0999@gmail.com</p></noscript>
+</body>
+</html>
